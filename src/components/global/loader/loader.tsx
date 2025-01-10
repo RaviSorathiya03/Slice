@@ -12,7 +12,7 @@ type Props = {
 const Loader = ({children, className, state, color}: Props) => {
   return state? <div className={cn(className)}>
     <Spinner color={color}/>
-  </div>: <div></div>
+  </div>: <div>{children}</div>
 }
 
 export default Loader
